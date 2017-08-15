@@ -1,0 +1,23 @@
+//
+//  PrefixHeaderUnitTest.pch
+//  EAMovieApp
+//
+//  Created by EastAgile42 on 8/15/17.
+//  Copyright © 2017 East Agile. All rights reserved.
+//
+
+#ifndef PrefixHeaderUnitTest_pch
+#define PrefixHeaderUnitTest_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Foundation/Foundation.h>
+#import <Specta/Specta.h>
+#import <Expecta/Expecta.h>
+#import <KIF/KIF.h>
+#import "Localizable.h"
+
+#define localized(string) NSLocalizedString(string, nil)
+
+#endif /* PrefixHeaderUnitTest_pch */

@@ -20,6 +20,7 @@
     [super viewDidLoad];
     
     [self configureUI];
+    [self configureUIAccessibility];
 }
 
 #pragma mark - UI configuration
@@ -37,6 +38,12 @@
     [skipButtonAttributedString appendAttributedString: skipButtonImageAttributedString];
     [skipButtonAttributedString addAttribute:NSForegroundColorAttributeName value:UIColorFromRGB(SKIP_BUTTON_TITLE_COLOR) range:NSMakeRange(0, skipButtonAttributedString.length)];
     [skipButton setAttributedTitle:skipButtonAttributedString forState:UIControlStateNormal];
+}
+
+- (void)configureUIAccessibility {
+    [signinButton setAccessibilityLabel:localized(SIGNIN_BUTTON_TITLE)];
+    [signupButton setAccessibilityLabel:localized(SIGNUP_BUTTON_TITLE)];
+    [skipButton setAccessibilityLabel:localized(SKIP_BUTTON_TITLE)];
 }
 
 @end

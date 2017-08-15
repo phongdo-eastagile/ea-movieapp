@@ -17,6 +17,7 @@ def pod_test
     pod 'OCMockito'
     pod 'OCMock'
     pod 'OHHTTPStubs'
+    pod 'KIF'
 end
 
 target :EAMovieAppTests do
@@ -25,5 +26,4 @@ end
 
 target :EAMovieAppUITests do
     pod_test
-    pod 'KIF'
 end
