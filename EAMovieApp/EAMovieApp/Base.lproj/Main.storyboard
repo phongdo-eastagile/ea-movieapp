@@ -249,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="1932" y="-366"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="RjQ-MU-AyY">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="ZpL-bv-g2f" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="ZpL-bv-g2f" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HO0-ep-PyC"/>
                         <viewControllerLayoutGuide type="bottom" id="Wdb-hG-YXj"/>
@@ -375,6 +375,13 @@
                             <constraint firstItem="xhv-7h-uOd" firstAttribute="centerX" secondItem="pFC-pW-BKG" secondAttribute="centerX" id="zu9-vO-vby"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Jag-0c-Jic" id="g60-uz-GML"/>
+                        <outlet property="emailTextField" destination="gjK-sM-jhG" id="ow7-iM-Q7V"/>
+                        <outlet property="passwordTextField" destination="Hkg-7l-bsC" id="0Ji-FC-b4p"/>
+                        <outlet property="signinButton" destination="KoM-k4-Zpn" id="KX9-cP-9KT"/>
+                        <outlet property="signupButton" destination="fK1-Qd-zHM" id="QYR-3z-gpy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvX-dj-cj2" sceneMemberID="firstResponder"/>
             </objects>
@@ -385,7 +392,7 @@
         <image name="ic-logo" width="256" height="152"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MG5-0H-yt2"/>
         <segue reference="u47-fB-XGK"/>
+        <segue reference="nNk-uE-eYo"/>
     </inferredMetricsTieBreakers>
 </document>
