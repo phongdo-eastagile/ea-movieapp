@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  EAMovieApp
+
+  Created by EastAgile42 on 8/15/17.
+  Copyright © 2017 East Agile. All rights reserved.
+*/
+
+"app.string.signin-button-title" = "Sign in";
+"app.string.signup-button-title" = "Sign up";
+"app.string.skip-button-title" = "Or Skip ";

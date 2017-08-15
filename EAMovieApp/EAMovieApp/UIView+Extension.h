@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIView+Extension.h
 //  EAMovieApp
 //
 //  Created by EastAgile42 on 8/15/17.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIView (Extension)
 
+- (void)roundedCorner:(CGFloat)radius;
 
 @end
-

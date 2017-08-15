@@ -10,12 +10,17 @@
 		103CF3E2860D8DAF9FAF4645 /* libPods-EAMovieApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013A4FB2949C1E147141224 /* libPods-EAMovieApp.a */; };
 		97291ECE1F429F7E00AD2351 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291ECD1F429F7E00AD2351 /* main.m */; };
 		97291ED11F429F7E00AD2351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291ED01F429F7E00AD2351 /* AppDelegate.m */; };
-		97291ED41F429F7E00AD2351 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291ED31F429F7E00AD2351 /* ViewController.m */; };
 		97291ED71F429F7E00AD2351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97291ED51F429F7E00AD2351 /* Main.storyboard */; };
 		97291ED91F429F7E00AD2351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97291ED81F429F7E00AD2351 /* Assets.xcassets */; };
 		97291EDC1F429F7E00AD2351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97291EDA1F429F7E00AD2351 /* LaunchScreen.storyboard */; };
 		97291EE71F429F7E00AD2351 /* EAMovieAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291EE61F429F7E00AD2351 /* EAMovieAppTests.m */; };
 		97291EF21F429F7E00AD2351 /* EAMovieAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291EF11F429F7E00AD2351 /* EAMovieAppUITests.m */; };
+		97291F041F42A97700AD2351 /* WelcomeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F031F42A97700AD2351 /* WelcomeViewControllerTests.m */; };
+		97291F081F42AA2A00AD2351 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F071F42AA2A00AD2351 /* WelcomeViewController.m */; };
+		97291F0B1F42ABD600AD2351 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97291F0D1F42ABD600AD2351 /* Localizable.strings */; };
+		97291F111F42ACC000AD2351 /* Localizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F101F42ACC000AD2351 /* Localizable.m */; };
+		97291F171F42B21C00AD2351 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F161F42B21C00AD2351 /* Constant.m */; };
+		97291F1F1F42CD9300AD2351 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F1E1F42CD9300AD2351 /* UIView+Extension.m */; };
 		CB48587BD34615C444C6332E /* libPods-EAMovieAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */; };
 		ED98CFE7F2B400E2E70237D9 /* libPods-EAMovieAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D309C64818C06D4C3BAF9D5 /* libPods-EAMovieAppTests.a */; };
 /* End PBXBuildFile section */
@@ -45,8 +50,6 @@
 		97291ECD1F429F7E00AD2351 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97291ECF1F429F7E00AD2351 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97291ED01F429F7E00AD2351 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		97291ED21F429F7E00AD2351 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		97291ED31F429F7E00AD2351 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		97291ED61F429F7E00AD2351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97291ED81F429F7E00AD2351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97291EDB1F429F7E00AD2351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,18 @@
 		97291EED1F429F7E00AD2351 /* EAMovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EAMovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97291EF11F429F7E00AD2351 /* EAMovieAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAMovieAppUITests.m; sourceTree = "<group>"; };
 		97291EF31F429F7E00AD2351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97291F031F42A97700AD2351 /* WelcomeViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewControllerTests.m; sourceTree = "<group>"; };
+		97291F061F42AA2A00AD2351 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		97291F071F42AA2A00AD2351 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		97291F0C1F42ABD600AD2351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		97291F0F1F42ACC000AD2351 /* Localizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Localizable.h; sourceTree = "<group>"; };
+		97291F101F42ACC000AD2351 /* Localizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Localizable.m; sourceTree = "<group>"; };
+		97291F131F42AEE200AD2351 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		97291F141F42B0BA00AD2351 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		97291F151F42B21C00AD2351 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		97291F161F42B21C00AD2351 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		97291F1D1F42CD9300AD2351 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		97291F1E1F42CD9300AD2351 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		BF212A87AECE5AA44C602B6B /* Pods-EAMovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EAMovieAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26A73D495843F45C1E5AB2 /* Pods-EAMovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +176,7 @@
 		97291EF01F429F7E00AD2351 /* EAMovieAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				97291F031F42A97700AD2351 /* WelcomeViewControllerTests.m */,
 				97291EF11F429F7E00AD2351 /* EAMovieAppUITests.m */,
 				97291EF31F429F7E00AD2351 /* Info.plist */,
 			);
@@ -173,6 +189,8 @@
 				97291ED81F429F7E00AD2351 /* Assets.xcassets */,
 				97291EDD1F429F7E00AD2351 /* Info.plist */,
 				97291ECD1F429F7E00AD2351 /* main.m */,
+				97291F0D1F42ABD600AD2351 /* Localizable.strings */,
+				97291F131F42AEE200AD2351 /* PrefixHeader.pch */,
 			);
 			name = SupportingFile;
 			sourceTree = "<group>";
@@ -180,8 +198,7 @@
 		97291F001F429FAD00AD2351 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				97291ED21F429F7E00AD2351 /* ViewController.h */,
-				97291ED31F429F7E00AD2351 /* ViewController.m */,
+				97291F051F42AA0B00AD2351 /* Welcome */,
 			);
 			name = Feature;
 			sourceTree = "<group>";
@@ -189,6 +206,8 @@
 		97291F011F429FB800AD2351 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				97291F181F42CC7800AD2351 /* Extension */,
+				97291F121F42ACC400AD2351 /* Constant */,
 				97291ECF1F429F7E00AD2351 /* AppDelegate.h */,
 				97291ED01F429F7E00AD2351 /* AppDelegate.m */,
 			);
@@ -202,6 +221,35 @@
 				97291EDA1F429F7E00AD2351 /* LaunchScreen.storyboard */,
 			);
 			name = Layout;
+			sourceTree = "<group>";
+		};
+		97291F051F42AA0B00AD2351 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				97291F061F42AA2A00AD2351 /* WelcomeViewController.h */,
+				97291F071F42AA2A00AD2351 /* WelcomeViewController.m */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		97291F121F42ACC400AD2351 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				97291F0F1F42ACC000AD2351 /* Localizable.h */,
+				97291F101F42ACC000AD2351 /* Localizable.m */,
+				97291F151F42B21C00AD2351 /* Constant.h */,
+				97291F161F42B21C00AD2351 /* Constant.m */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		97291F181F42CC7800AD2351 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97291F1D1F42CD9300AD2351 /* UIView+Extension.h */,
+				97291F1E1F42CD9300AD2351 /* UIView+Extension.m */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97291EDC1F429F7E00AD2351 /* LaunchScreen.storyboard in Resources */,
+				97291F0B1F42ABD600AD2351 /* Localizable.strings in Resources */,
 				97291ED91F429F7E00AD2351 /* Assets.xcassets in Resources */,
 				97291ED71F429F7E00AD2351 /* Main.storyboard in Resources */,
 			);
@@ -399,9 +448,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-EAMovieApp/Pods-EAMovieApp-resources.sh",
+				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -496,9 +548,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97291ED41F429F7E00AD2351 /* ViewController.m in Sources */,
+				97291F1F1F42CD9300AD2351 /* UIView+Extension.m in Sources */,
 				97291ED11F429F7E00AD2351 /* AppDelegate.m in Sources */,
 				97291ECE1F429F7E00AD2351 /* main.m in Sources */,
+				97291F111F42ACC000AD2351 /* Localizable.m in Sources */,
+				97291F171F42B21C00AD2351 /* Constant.m in Sources */,
+				97291F081F42AA2A00AD2351 /* WelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97291EF21F429F7E00AD2351 /* EAMovieAppUITests.m in Sources */,
+				97291F041F42A97700AD2351 /* WelcomeViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +604,15 @@
 				97291EDB1F429F7E00AD2351 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		97291F0D1F42ABD600AD2351 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97291F0C1F42ABD600AD2351 /* Base */,
+				97291F141F42B0BA00AD2351 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -651,6 +716,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R69758BRLK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EAMovieApp/PrefixHeader.pch";
 				INFOPLIST_FILE = EAMovieApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -665,6 +731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R69758BRLK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EAMovieApp/PrefixHeader.pch";
 				INFOPLIST_FILE = EAMovieApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -746,6 +813,7 @@
 				97291EF81F429F7E00AD2351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97291EF91F429F7E00AD2351 /* Build configuration list for PBXNativeTarget "EAMovieAppTests" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +822,7 @@
 				97291EFB1F429F7E00AD2351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97291EFC1F429F7E00AD2351 /* Build configuration list for PBXNativeTarget "EAMovieAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -762,6 +831,7 @@
 				97291EFE1F429F7E00AD2351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
