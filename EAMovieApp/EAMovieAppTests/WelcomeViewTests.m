@@ -8,12 +8,13 @@
 
 #import "WelcomeViewController.h"
 
-SpecBegin(WelcomeViewTest)
+SpecBegin(WelcomeViewUITest)
 
 describe(@"Welcome View", ^{
    
     it(@"should navigate to Sign-In View when pressed on Sign-In button", ^{
         [tester tapViewWithAccessibilityLabel:localized(SIGNIN_BUTTON_TITLE)];
+        [tester waitForViewWithAccessibilityLabel:localized(EMAIL_TEXT)];
     });
     
 });

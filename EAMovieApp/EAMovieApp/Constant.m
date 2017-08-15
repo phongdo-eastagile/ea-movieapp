@@ -12,3 +12,4 @@ CGFloat const BUTTON_CORNER_RADIUS = 5.0;
 
 #pragma mark - Color
 int const SKIP_BUTTON_TITLE_COLOR = 0xC0C0C0;
+int const AUTH_PLACEHOLDER_TEXT_COLOR = 0xC0C0C0;

@@ -21,6 +21,7 @@
 		97291F251F42E18B00AD2351 /* WelcomeViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F241F42E18B00AD2351 /* WelcomeViewTests.m */; };
 		97291F261F42E1B200AD2351 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97291F0D1F42ABD600AD2351 /* Localizable.strings */; };
 		97291F271F42E1BE00AD2351 /* Localizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F101F42ACC000AD2351 /* Localizable.m */; };
+		97291F2B1F42E65200AD2351 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F2A1F42E65200AD2351 /* SignInViewController.m */; };
 		CB48587BD34615C444C6332E /* libPods-EAMovieAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */; };
 		ED98CFE7F2B400E2E70237D9 /* libPods-EAMovieAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D309C64818C06D4C3BAF9D5 /* libPods-EAMovieAppTests.a */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,8 @@
 		97291F1E1F42CD9300AD2351 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		97291F231F42E15D00AD2351 /* PrefixHeaderUnitTest.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeaderUnitTest.pch; sourceTree = "<group>"; };
 		97291F241F42E18B00AD2351 /* WelcomeViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewTests.m; sourceTree = "<group>"; };
+		97291F291F42E65200AD2351 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		97291F2A1F42E65200AD2351 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		BF212A87AECE5AA44C602B6B /* Pods-EAMovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EAMovieAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26A73D495843F45C1E5AB2 /* Pods-EAMovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 		97291F001F429FAD00AD2351 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				97291F281F42E62700AD2351 /* SignIn */,
 				97291F051F42AA0B00AD2351 /* Welcome */,
 			);
 			name = Feature;
@@ -248,6 +252,15 @@
 				97291F1E1F42CD9300AD2351 /* UIView+Extension.m */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		97291F281F42E62700AD2351 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				97291F291F42E65200AD2351 /* SignInViewController.h */,
+				97291F2A1F42E65200AD2351 /* SignInViewController.m */,
+			);
+			name = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97291F2B1F42E65200AD2351 /* SignInViewController.m in Sources */,
 				97291F1F1F42CD9300AD2351 /* UIView+Extension.m in Sources */,
 				97291ED11F429F7E00AD2351 /* AppDelegate.m in Sources */,
 				97291ECE1F429F7E00AD2351 /* main.m in Sources */,

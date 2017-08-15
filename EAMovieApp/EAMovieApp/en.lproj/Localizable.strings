@@ -9,3 +9,7 @@
 "app.string.signin-button-title" = "Sign in";
 "app.string.signup-button-title" = "Sign up";
 "app.string.skip-button-title" = "Or Skip ";
+"app.string.cancel-button-title" = "Cancel";
+"app.string.forgot-password-button-title" = "forgot your password?";
+"app.string.email-text" = "email";
+"app.string.password-text" = "password";
