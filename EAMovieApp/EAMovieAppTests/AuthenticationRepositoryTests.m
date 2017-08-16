@@ -7,29 +7,54 @@
 //
 
 #import "AuthenticationRepository.h"
+#import "UserEntity.h"
 
 
 SpecBegin(AuthenticationRepositoryTest)
 
+__block NSString *userEmail;
+__block NSString *userPassword;
+__block NSError *authError;
+__block UserEntity *authUser;
+
+beforeAll(^{
+    userEmail = @"dummy-user@gmail.com";
+    userPassword = @"dummypassword";
+    [Expecta setAsynchronousTestTimeout:10.0];
+});
+
+beforeEach(^{
+    authError = nil;
+    authUser = nil;
+});
+
 describe(@"Authentication handlers", ^{
-    
-    __block NSString *userEmail;
-    __block NSString *userPassword;
-    
-    beforeAll(^{
-        userEmail = @"dummy-user@gmail.com";
-        userPassword = @"dummypassword";
-    });
-    
-    describe(@"SignUp handler", ^{
-       
-        context(@"register new user", ^{
+
+    context(@"Register user", ^{
         
-            
+        beforeEach(^{
+            [AuthenticationRepository signupWith:userEmail andPassword:userPassword completionHandler:^(UserEntity *user, NSError *error) {
+                authError = error;
+                authUser = user;
+            }];
+        });
+        
+        it(@"tc1.should return user data when registered a new user", ^{
+            expect(authUser).willNot.beNil();
+            expect(authError).will.beNil();
+        });
+        
+        it(@"tc2.should return an error when re-registered an exisiting user", ^{
+            expect(authError).willNot.beNil();
+            expect(authUser).will.beNil();
         });
         
     });
     
+});
+
+afterAll(^{
+    [AuthenticationRepository deleteCurrentUserAccountWithCompletionHandler:^(BOOL isSuccess) { }];
 });
 
 SpecEnd
