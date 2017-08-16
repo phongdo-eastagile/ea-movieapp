@@ -23,6 +23,13 @@
 		97291F271F42E1BE00AD2351 /* Localizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F101F42ACC000AD2351 /* Localizable.m */; };
 		97291F2B1F42E65200AD2351 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F2A1F42E65200AD2351 /* SignInViewController.m */; };
 		97291F301F42FB6C00AD2351 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97291F2F1F42FB6C00AD2351 /* SignUpViewController.m */; };
+		976A09151F43E1FE00515337 /* AuthenticationRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09141F43E1FE00515337 /* AuthenticationRepositoryTests.m */; };
+		976A091D1F43E3D200515337 /* AuthenticationRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A091C1F43E3D200515337 /* AuthenticationRepository.m */; };
+		976A09201F440F2400515337 /* AuthenticationRepositoryStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A091F1F440F2300515337 /* AuthenticationRepositoryStub.m */; };
+		976A09251F44119700515337 /* UserEntityTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09241F44119700515337 /* UserEntityTest.m */; };
+		976A09291F44121700515337 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09281F44121700515337 /* UserEntity.m */; };
+		976A092B1F441E3100515337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 976A092A1F441E3100515337 /* GoogleService-Info.plist */; };
+		976A092C1F441E4800515337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 976A092A1F441E3100515337 /* GoogleService-Info.plist */; };
 		CB48587BD34615C444C6332E /* libPods-EAMovieAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */; };
 		ED98CFE7F2B400E2E70237D9 /* libPods-EAMovieAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D309C64818C06D4C3BAF9D5 /* libPods-EAMovieAppTests.a */; };
 /* End PBXBuildFile section */
@@ -77,6 +84,14 @@
 		97291F2A1F42E65200AD2351 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		97291F2E1F42FB6C00AD2351 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		97291F2F1F42FB6C00AD2351 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		976A09141F43E1FE00515337 /* AuthenticationRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationRepositoryTests.m; sourceTree = "<group>"; };
+		976A091B1F43E3D200515337 /* AuthenticationRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationRepository.h; sourceTree = "<group>"; };
+		976A091C1F43E3D200515337 /* AuthenticationRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationRepository.m; sourceTree = "<group>"; };
+		976A091F1F440F2300515337 /* AuthenticationRepositoryStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationRepositoryStub.m; sourceTree = "<group>"; };
+		976A09241F44119700515337 /* UserEntityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntityTest.m; sourceTree = "<group>"; };
+		976A09271F44121700515337 /* UserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEntity.h; sourceTree = "<group>"; };
+		976A09281F44121700515337 /* UserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntity.m; sourceTree = "<group>"; };
+		976A092A1F441E3100515337 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF212A87AECE5AA44C602B6B /* Pods-EAMovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EAMovieAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26A73D495843F45C1E5AB2 /* Pods-EAMovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,7 +187,8 @@
 		97291EE51F429F7E00AD2351 /* EAMovieAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				97291F241F42E18B00AD2351 /* WelcomeViewTests.m */,
+				976A09261F4411B500515337 /* Test */,
+				976A091E1F440EFA00515337 /* Helper */,
 				97291EE81F429F7E00AD2351 /* Info.plist */,
 				97291F231F42E15D00AD2351 /* PrefixHeaderUnitTest.pch */,
 			);
@@ -190,6 +206,7 @@
 		97291EFF1F429F9700AD2351 /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
+				976A092A1F441E3100515337 /* GoogleService-Info.plist */,
 				97291ED81F429F7E00AD2351 /* Assets.xcassets */,
 				97291EDD1F429F7E00AD2351 /* Info.plist */,
 				97291ECD1F429F7E00AD2351 /* main.m */,
@@ -212,6 +229,7 @@
 		97291F011F429FB800AD2351 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				976A09161F43E22E00515337 /* Catalog */,
 				97291F181F42CC7800AD2351 /* Extension */,
 				97291F121F42ACC400AD2351 /* Constant */,
 				97291ECF1F429F7E00AD2351 /* AppDelegate.h */,
@@ -274,6 +292,75 @@
 				97291F2F1F42FB6C00AD2351 /* SignUpViewController.m */,
 			);
 			name = Signup;
+			sourceTree = "<group>";
+		};
+		976A09161F43E22E00515337 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				976A09211F44115400515337 /* Entity */,
+				976A09191F43E25100515337 /* Repository */,
+			);
+			name = Catalog;
+			sourceTree = "<group>";
+		};
+		976A09171F43E23600515337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97291F241F42E18B00AD2351 /* WelcomeViewTests.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		976A09181F43E24100515337 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				976A09141F43E1FE00515337 /* AuthenticationRepositoryTests.m */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		976A09191F43E25100515337 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				976A091B1F43E3D200515337 /* AuthenticationRepository.h */,
+				976A091C1F43E3D200515337 /* AuthenticationRepository.m */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		976A091E1F440EFA00515337 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				976A091F1F440F2300515337 /* AuthenticationRepositoryStub.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		976A09211F44115400515337 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				976A09271F44121700515337 /* UserEntity.h */,
+				976A09281F44121700515337 /* UserEntity.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		976A09221F44117500515337 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				976A09241F44119700515337 /* UserEntityTest.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		976A09261F4411B500515337 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				976A09221F44117500515337 /* Entity */,
+				976A09181F43E24100515337 /* Repository */,
+				976A09171F43E23600515337 /* View */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +483,7 @@
 			files = (
 				97291EDC1F429F7E00AD2351 /* LaunchScreen.storyboard in Resources */,
 				97291F0B1F42ABD600AD2351 /* Localizable.strings in Resources */,
+				976A092B1F441E3100515337 /* GoogleService-Info.plist in Resources */,
 				97291ED91F429F7E00AD2351 /* Assets.xcassets in Resources */,
 				97291ED71F429F7E00AD2351 /* Main.storyboard in Resources */,
 			);
@@ -406,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97291F261F42E1B200AD2351 /* Localizable.strings in Resources */,
+				976A092C1F441E4800515337 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,10 +664,12 @@
 			files = (
 				97291F2B1F42E65200AD2351 /* SignInViewController.m in Sources */,
 				97291F1F1F42CD9300AD2351 /* UIView+Extension.m in Sources */,
+				976A091D1F43E3D200515337 /* AuthenticationRepository.m in Sources */,
 				97291ED11F429F7E00AD2351 /* AppDelegate.m in Sources */,
 				97291ECE1F429F7E00AD2351 /* main.m in Sources */,
 				97291F111F42ACC000AD2351 /* Localizable.m in Sources */,
 				97291F171F42B21C00AD2351 /* Constant.m in Sources */,
+				976A09291F44121700515337 /* UserEntity.m in Sources */,
 				97291F301F42FB6C00AD2351 /* SignUpViewController.m in Sources */,
 				97291F081F42AA2A00AD2351 /* WelcomeViewController.m in Sources */,
 			);
@@ -588,8 +679,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976A09151F43E1FE00515337 /* AuthenticationRepositoryTests.m in Sources */,
 				97291F271F42E1BE00AD2351 /* Localizable.m in Sources */,
 				97291F251F42E18B00AD2351 /* WelcomeViewTests.m in Sources */,
+				976A09201F440F2400515337 /* AuthenticationRepositoryStub.m in Sources */,
+				976A09251F44119700515337 /* UserEntityTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

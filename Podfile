@@ -4,6 +4,8 @@ inhibit_all_warnings!
 project 'EAMovieApp/EAMovieApp.xcodeproj'
 
 def pod_development
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
     pod 'FontAwesomeKit/FontAwesome'
 end
 
