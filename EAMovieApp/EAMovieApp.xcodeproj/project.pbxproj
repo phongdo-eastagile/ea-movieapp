@@ -30,6 +30,7 @@
 		976A092B1F441E3100515337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 976A092A1F441E3100515337 /* GoogleService-Info.plist */; };
 		976A092C1F441E4800515337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 976A092A1F441E3100515337 /* GoogleService-Info.plist */; };
 		976A09321F441F2800515337 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09311F441F2800515337 /* FirebaseManager.m */; };
+		976A09391F44538500515337 /* SVProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09381F44538500515337 /* SVProgressHUD+Extension.m */; };
 		CB48587BD34615C444C6332E /* libPods-EAMovieAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */; };
 		ED98CFE7F2B400E2E70237D9 /* libPods-EAMovieAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D309C64818C06D4C3BAF9D5 /* libPods-EAMovieAppTests.a */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,8 @@
 		976A092A1F441E3100515337 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		976A09301F441F2800515337 /* FirebaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseManager.h; sourceTree = "<group>"; };
 		976A09311F441F2800515337 /* FirebaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirebaseManager.m; sourceTree = "<group>"; };
+		976A09371F44538500515337 /* SVProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		976A09381F44538500515337 /* SVProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+Extension.m"; sourceTree = "<group>"; };
 		BF212A87AECE5AA44C602B6B /* Pods-EAMovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EAMovieAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26A73D495843F45C1E5AB2 /* Pods-EAMovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -367,6 +370,7 @@
 		976A092E1F441EF900515337 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				976A09361F44530000515337 /* SVProgressHUD */,
 				976A092F1F441F0D00515337 /* Firebase */,
 			);
 			name = Dependency;
@@ -379,6 +383,15 @@
 				976A09311F441F2800515337 /* FirebaseManager.m */,
 			);
 			name = Firebase;
+			sourceTree = "<group>";
+		};
+		976A09361F44530000515337 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				976A09371F44538500515337 /* SVProgressHUD+Extension.h */,
+				976A09381F44538500515337 /* SVProgressHUD+Extension.m */,
+			);
+			name = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +596,7 @@
 				"${SRCROOT}/../Pods/Target Support Files/Pods-EAMovieApp/Pods-EAMovieApp-resources.sh",
 				"${PODS_ROOT}/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -692,6 +706,7 @@
 				976A09291F44121700515337 /* UserEntity.m in Sources */,
 				97291F301F42FB6C00AD2351 /* SignUpViewController.m in Sources */,
 				97291F081F42AA2A00AD2351 /* WelcomeViewController.m in Sources */,
+				976A09391F44538500515337 /* SVProgressHUD+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@ def pod_development
     pod 'Firebase/Auth'
     pod 'FontAwesomeKit/FontAwesome'
     pod 'IQKeyboardManager'
+    pod 'SVProgressHUD'
 end
 
 target :EAMovieApp do
