@@ -7,6 +7,7 @@ def pod_development
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'FontAwesomeKit/FontAwesome'
+    pod 'IQKeyboardManager'
 end
 
 target :EAMovieApp do
