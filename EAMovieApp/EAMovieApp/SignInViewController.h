@@ -17,4 +17,6 @@
     IBOutlet UITextField *passwordTextField;
 }
 
+- (IBAction)didTapCancelButton:(UIButton*)sender;
+
 @end

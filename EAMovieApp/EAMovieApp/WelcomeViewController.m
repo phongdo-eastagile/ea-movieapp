@@ -41,9 +41,8 @@
 }
 
 - (void)configureUIAccessibility {
-    [signinButton setAccessibilityLabel:localized(SIGNIN_BUTTON_TITLE)];
-    [signupButton setAccessibilityLabel:localized(SIGNUP_BUTTON_TITLE)];
-    [skipButton setAccessibilityLabel:localized(SKIP_BUTTON_TITLE)];
+    [signinButton setAccessibilityLabel:SIGNIN_BUTTON];
+    [signupButton setAccessibilityLabel:SIGNUP_BUTTON];
 }
 
 @end

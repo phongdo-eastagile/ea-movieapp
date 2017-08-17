@@ -15,4 +15,6 @@
     IBOutlet UIButton *skipButton;
 }
 
+
+
 @end

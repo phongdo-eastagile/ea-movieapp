@@ -17,6 +17,7 @@
 #import <Expecta/Expecta.h>
 #import <KIF/KIF.h>
 #import "Localizable.h"
+#import "Accessibility.h"
 
 #define localized(string) NSLocalizedString(string, nil)
 

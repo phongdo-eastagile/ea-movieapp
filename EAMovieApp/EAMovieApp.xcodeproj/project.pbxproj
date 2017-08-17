@@ -31,6 +31,9 @@
 		976A092C1F441E4800515337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 976A092A1F441E3100515337 /* GoogleService-Info.plist */; };
 		976A09321F441F2800515337 /* FirebaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09311F441F2800515337 /* FirebaseManager.m */; };
 		976A09391F44538500515337 /* SVProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09381F44538500515337 /* SVProgressHUD+Extension.m */; };
+		976A093B1F4454E100515337 /* SignUpViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A093A1F4454E100515337 /* SignUpViewTests.m */; };
+		976A093E1F45287500515337 /* Accessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A093D1F45287500515337 /* Accessibility.m */; };
+		976A093F1F45287500515337 /* Accessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A093D1F45287500515337 /* Accessibility.m */; };
 		CB48587BD34615C444C6332E /* libPods-EAMovieAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */; };
 		ED98CFE7F2B400E2E70237D9 /* libPods-EAMovieAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D309C64818C06D4C3BAF9D5 /* libPods-EAMovieAppTests.a */; };
 /* End PBXBuildFile section */
@@ -96,6 +99,9 @@
 		976A09311F441F2800515337 /* FirebaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirebaseManager.m; sourceTree = "<group>"; };
 		976A09371F44538500515337 /* SVProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+Extension.h"; sourceTree = "<group>"; };
 		976A09381F44538500515337 /* SVProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		976A093A1F4454E100515337 /* SignUpViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewTests.m; sourceTree = "<group>"; };
+		976A093C1F45287500515337 /* Accessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accessibility.h; sourceTree = "<group>"; };
+		976A093D1F45287500515337 /* Accessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accessibility.m; sourceTree = "<group>"; };
 		BF212A87AECE5AA44C602B6B /* Pods-EAMovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EAMovieAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26A73D495843F45C1E5AB2 /* Pods-EAMovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +273,8 @@
 				97291F101F42ACC000AD2351 /* Localizable.m */,
 				97291F151F42B21C00AD2351 /* Constant.h */,
 				97291F161F42B21C00AD2351 /* Constant.m */,
+				976A093C1F45287500515337 /* Accessibility.h */,
+				976A093D1F45287500515337 /* Accessibility.m */,
 			);
 			name = Constant;
 			sourceTree = "<group>";
@@ -312,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				97291F241F42E18B00AD2351 /* WelcomeViewTests.m */,
+				976A093A1F4454E100515337 /* SignUpViewTests.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -699,6 +708,7 @@
 				97291F1F1F42CD9300AD2351 /* UIView+Extension.m in Sources */,
 				976A091D1F43E3D200515337 /* AuthenticationRepository.m in Sources */,
 				97291ED11F429F7E00AD2351 /* AppDelegate.m in Sources */,
+				976A093E1F45287500515337 /* Accessibility.m in Sources */,
 				97291ECE1F429F7E00AD2351 /* main.m in Sources */,
 				976A09321F441F2800515337 /* FirebaseManager.m in Sources */,
 				97291F111F42ACC000AD2351 /* Localizable.m in Sources */,
@@ -716,8 +726,10 @@
 			files = (
 				976A09151F43E1FE00515337 /* AuthenticationRepositoryTests.m in Sources */,
 				97291F271F42E1BE00AD2351 /* Localizable.m in Sources */,
+				976A093F1F45287500515337 /* Accessibility.m in Sources */,
 				97291F251F42E18B00AD2351 /* WelcomeViewTests.m in Sources */,
 				976A09251F44119700515337 /* UserEntityTest.m in Sources */,
+				976A093B1F4454E100515337 /* SignUpViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

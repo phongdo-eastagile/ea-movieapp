@@ -39,8 +39,16 @@
 }
 
 - (void)configureUIAccessibility {
-    [emailTextField setAccessibilityLabel:localized(EMAIL_TEXT)];
-    [signinButton setAccessibilityLabel:localized(SIGNIN_BUTTON_TITLE)];
+    [signupButton setAccessibilityLabel:SIGNUP_BUTTON];
+    [signinButton setAccessibilityLabel:SIGNIN_BUTTON];
+    [cancelButton setAccessibilityLabel:CANCEL_BUTTON];
+    [emailTextField setAccessibilityLabel:EMAIL_TEXTFIELD];
+}
+
+#pragma mark - UI Action
+
+- (IBAction)didTapCancelButton:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

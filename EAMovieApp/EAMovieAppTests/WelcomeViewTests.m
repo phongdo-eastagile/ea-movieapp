@@ -12,16 +12,20 @@ SpecBegin(WelcomeViewUITest)
 
 describe(@"Welcome View", ^{
    
-    it(@"should navigate to Sign-In View when pressed on Sign-In button", ^{
-        [tester tapViewWithAccessibilityLabel:localized(SIGNIN_BUTTON_TITLE)];
-        [tester waitForViewWithAccessibilityLabel:localized(EMAIL_TEXT)];
-        [tester waitForViewWithAccessibilityLabel:localized(SIGNUP_BUTTON_TITLE)];
+    it(@"should navigate to Sign-In view when tap on Sign-In button", ^{
+        [tester tapViewWithAccessibilityLabel:SIGNIN_BUTTON];
+        [tester waitForViewWithAccessibilityLabel:EMAIL_TEXTFIELD];
+        [tester waitForViewWithAccessibilityLabel:SIGNUP_BUTTON];
     });
     
-    it(@"should navigate to Sign-Up View when pressed on Sign-Up button", ^{
-        [tester tapViewWithAccessibilityLabel:localized(SIGNUP_BUTTON_TITLE)];
-        [tester waitForViewWithAccessibilityLabel:localized(EMAIL_TEXT)];
-        [tester waitForViewWithAccessibilityLabel:localized(SIGNIN_BUTTON_TITLE)];
+    it(@"should navigate to Sign-Up view when tap on Sign-Up button", ^{
+        [tester tapViewWithAccessibilityLabel:SIGNUP_BUTTON];
+        [tester waitForViewWithAccessibilityLabel:EMAIL_TEXTFIELD];
+        [tester waitForViewWithAccessibilityLabel:SIGNIN_BUTTON];
+    });
+    
+    afterEach(^{
+        [tester tapViewWithAccessibilityLabel:CANCEL_BUTTON];
     });
     
 });
