@@ -351,6 +351,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapSignupButton:" destination="ZpL-bv-g2f" eventType="touchUpInside" id="oF7-kV-j8j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

@@ -11,23 +11,29 @@
 @implementation SVProgressHUD (Extension)
 
 + (void)showSuccessWithMessage:(NSString *)message {
+    [self configureDefaultMaskType];
     [SVProgressHUD showSuccessWithStatus:message];
 }
 
 + (void)showErrorWithMessage:(NSString *)message {
+    [self configureDefaultMaskType];
     [SVProgressHUD showErrorWithStatus:message];
 }
 
 + (void)showError:(NSError *)error {
-    [SVProgressHUD showErrorWithStatus:error.localizedDescription];
+    [SVProgressHUD showErrorWithMessage:error.localizedDescription];
 }
 
 + (void)showLoading {
-    [SVProgressHUD showLoading];
+    [SVProgressHUD show];
 }
 
 + (void)hideLoading {
-    [SVProgressHUD hideLoading];
+    [SVProgressHUD dismiss];
+}
+
++ (void)configureDefaultMaskType {
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
 }
 
 @end

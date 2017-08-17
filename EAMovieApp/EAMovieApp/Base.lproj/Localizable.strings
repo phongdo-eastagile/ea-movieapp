@@ -13,3 +13,5 @@
 "app.string.forgot-password-button-title" = "forgot your password?";
 "app.string.email-text" = "email";
 "app.string.password-text" = "password";
+"app.string.signup-succeed-alert-title" = "Sign up successfully";
+"app.string.signup-failed-alert-title" = "Sign up failed";

@@ -57,10 +57,18 @@ describe(@"signup view", ^{
         
     });
     
-    context(@"loading indicator", ^{
-       
-        it(@"should be shown when pressed signup button", ^{
-            
+    context(@"pressed signup button", ^{
+        
+        beforeEach(^{
+            [tester enterText:userEmail intoViewWithAccessibilityLabel:EMAIL_TEXTFIELD];
+            [tester enterText:userPassword intoViewWithAccessibilityLabel:PASSWORD_TEXTFIELD];
+            [tester tapViewWithAccessibilityLabel:SIGNUP_BUTTON];
+        });
+        
+        it(@"should show the success alert", ^{
+            [tester waitForViewWithAccessibilityLabel:LOADING_INDICATOR];
+            [tester waitForAbsenceOfViewWithAccessibilityLabel:LOADING_INDICATOR];
+            [tester waitForViewWithAccessibilityLabel:localized(SIGNUP_SUCCEED_ALERT_TITLE)];
         });
         
     });

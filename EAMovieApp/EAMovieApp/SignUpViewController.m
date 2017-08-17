@@ -10,6 +10,8 @@
 
 @interface SignUpViewController ()
 
+- (void)createNewUserWithEmail:(NSString*)email andPassword:(NSString*)password;
+
 @end
 
 @implementation SignUpViewController
@@ -52,6 +54,30 @@
 
 - (IBAction)didTapCancelButton:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)didTapSignupButton:(UIButton *)sender {
+    NSString *emailText = [emailTextField text];
+    NSString *passwordText = [passwordTextField text];
+    [self createNewUserWithEmail:emailText andPassword:passwordText];
+}
+
+#pragma mark - Logic
+
+- (void)createNewUserWithEmail:(NSString*)email andPassword:(NSString*)password {
+    if (!email && !password) {
+        return;
+    }
+    [SVProgressHUD showLoading];
+    [AuthenticationRepository signupWith:email andPassword:password completionHandler:^(UserEntity *user, NSError *error) {
+        [SVProgressHUD hideLoading];
+        if (error) {
+            [SVProgressHUD showError:error];
+        }
+        else {
+            [SVProgressHUD showSuccessWithMessage:localized(SIGNUP_SUCCEED_ALERT_TITLE)];
+        }
+    }];
 }
 
 @end

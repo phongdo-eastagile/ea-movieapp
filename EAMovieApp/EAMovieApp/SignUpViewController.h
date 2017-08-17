@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SVProgressHUD/SVProgressHUD.h>
+#import "SVProgressHUD+Extension.h"
+#import "AuthenticationRepository.h"
+#import "UserEntity.h"
 
 @interface SignUpViewController : UIViewController {
     IBOutlet UIButton *signinButton;
@@ -18,5 +20,6 @@
 }
 
 - (IBAction)didTapCancelButton:(UIButton*)sender;
+- (IBAction)didTapSignupButton:(UIButton*)sender;
 
 @end
