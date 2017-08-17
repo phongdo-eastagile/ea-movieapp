@@ -35,6 +35,8 @@
     [signinButton setTitle:localized(SIGNIN_BUTTON_TITLE) forState:UIControlStateNormal];
     
     [emailTextField setAttributedPlaceholder:[[NSAttributedString alloc] initWithString:localized(EMAIL_TEXT) attributes:@{NSForegroundColorAttributeName: UIColorFromRGB(AUTH_PLACEHOLDER_TEXT_COLOR)}]];
+    [emailTextField becomeFirstResponder];
+    
     [passwordTextField setAttributedPlaceholder:[[NSAttributedString alloc] initWithString:localized(PASSWORD_TEXT) attributes:@{NSForegroundColorAttributeName: UIColorFromRGB(AUTH_PLACEHOLDER_TEXT_COLOR)}]];
 }
 
@@ -43,6 +45,7 @@
     [signinButton setAccessibilityLabel:SIGNIN_BUTTON];
     [cancelButton setAccessibilityLabel:CANCEL_BUTTON];
     [emailTextField setAccessibilityLabel:EMAIL_TEXTFIELD];
+    [passwordTextField setAccessibilityLabel:PASSWORD_TEXTFIELD];
 }
 
 #pragma mark - UI Action

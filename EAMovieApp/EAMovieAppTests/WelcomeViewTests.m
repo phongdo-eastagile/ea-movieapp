@@ -10,7 +10,7 @@
 
 SpecBegin(WelcomeViewUITest)
 
-describe(@"Welcome View", ^{
+describe(@"welcome view", ^{
    
     it(@"should navigate to Sign-In view when tap on Sign-In button", ^{
         [tester tapViewWithAccessibilityLabel:SIGNIN_BUTTON];

@@ -1,8 +1,9 @@
-//  OCMockito by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+//  OCMockito by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 Jonathan M. Reid. See LICENSE.txt
 
 #import "MKTExactTimes.h"
 
+#import "MKTInvocationMatcher.h"
 #import "MKTNumberOfInvocationsChecker.h"
 #import "MKTVerificationData.h"
 #import "MKTMissingInvocationChecker.h"
@@ -23,7 +24,7 @@
 }
 
 
-#pragma mark MKTVerificationMode
+#pragma mark - MKTVerificationMode
 
 - (void)verifyData:(MKTVerificationData *)data testLocation:(MKTTestLocation)testLocation
 {
@@ -32,6 +33,7 @@
     {
         MKTMissingInvocationChecker *missingInvocation = [[MKTMissingInvocationChecker alloc] init];
         failureDescription = [missingInvocation checkInvocations:data.invocations wanted:data.wanted];
+        [data.wanted stopArgumentCapture];
     }
     if (!failureDescription)
     {

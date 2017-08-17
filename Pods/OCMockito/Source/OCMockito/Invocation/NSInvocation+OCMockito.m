@@ -1,5 +1,5 @@
-//  OCMockito by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+//  OCMockito by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 Jonathan M. Reid. See LICENSE.txt
 
 #import "NSInvocation+OCMockito.h"
 
@@ -21,7 +21,7 @@
     for (NSUInteger idx = 2; idx < numberOfArguments; ++idx) // Indices 0 and 1 are self and _cmd
     {
         const char *argType = [signature getArgumentTypeAtIndex:idx];
-        id arg = [MKTArgumentGetterChain() retrieveArgumentAtIndex:idx ofType:argType onInvocation:self];
+        id arg = [MKTArgumentGetterChain() retrieveArgumentAtIndex:(NSInteger)idx ofType:argType onInvocation:self];
         if (arg)
             [arguments addObject:arg];
         else

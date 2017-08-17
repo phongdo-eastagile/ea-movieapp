@@ -11,3 +11,4 @@ NSString *const PASSWORD_TEXTFIELD = @"password-textfield";
 NSString *const SIGNIN_BUTTON = @"signin-button";
 NSString *const SIGNUP_BUTTON = @"signup-button";
 NSString *const CANCEL_BUTTON = @"cancel-button";
+NSString *const LOADING_INDICATOR = @"loading-indicator";

@@ -1,7 +1,10 @@
-//  OCMockito by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+//  OCMockito by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 Jonathan M. Reid. See LICENSE.txt
 
 #import <Foundation/Foundation.h>
+
+
+NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract NSInvocation helper methods
@@ -28,3 +31,5 @@
 - (void)mkt_retainArgumentsWithWeakTarget;
 
 @end
+
+NS_ASSUME_NONNULL_END

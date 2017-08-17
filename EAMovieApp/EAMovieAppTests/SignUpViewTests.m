@@ -16,13 +16,52 @@ beforeAll(^{
     userPassword = @"123456789";
 });
 
-describe(@"SignUp View", ^{
+beforeEach(^{
+    [tester resetAppState];
+});
+
+describe(@"signup view", ^{
    
+    __block UITextField *emailTextField;
+    __block UITextField *passwordTexfield;
+    
     beforeEach(^{
+        [tester tapViewWithAccessibilityLabel:SIGNUP_BUTTON];
+        emailTextField = (UITextField*)[tester waitForViewWithAccessibilityLabel:EMAIL_TEXTFIELD];
+        passwordTexfield = (UITextField*)[tester waitForViewWithAccessibilityLabel:PASSWORD_TEXTFIELD];
+    });
+    
+    context(@"email text field", ^{
+        
+        it(@"shoud be first responder", ^{
+            expect(emailTextField.isFirstResponder).to.beTruthy();
+        });
+        
+        it(@"should have a correct email when entered an email text", ^{
+            [tester enterText:userEmail intoViewWithAccessibilityLabel:EMAIL_TEXTFIELD];
+            [tester expectView:emailTextField toContainText:userEmail];
+        });
         
     });
     
-    it(@"should show loading indicator when pressed signUp button", ^{
+    context(@"password text field", ^{
+        
+        it(@"should have a correct password when entered a password text", ^{
+            [tester enterText:userPassword intoViewWithAccessibilityLabel:PASSWORD_TEXTFIELD];
+            [tester expectView:passwordTexfield toContainText:userPassword];
+        });
+        
+        it(@"should have a secure entry as text", ^{
+            expect(passwordTexfield.isSecureTextEntry).to.beTruthy();
+        });
+        
+    });
+    
+    context(@"loading indicator", ^{
+       
+        it(@"should be shown when pressed signup button", ^{
+            
+        });
         
     });
     

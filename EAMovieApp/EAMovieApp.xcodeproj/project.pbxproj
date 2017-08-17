@@ -34,6 +34,7 @@
 		976A093B1F4454E100515337 /* SignUpViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A093A1F4454E100515337 /* SignUpViewTests.m */; };
 		976A093E1F45287500515337 /* Accessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A093D1F45287500515337 /* Accessibility.m */; };
 		976A093F1F45287500515337 /* Accessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A093D1F45287500515337 /* Accessibility.m */; };
+		976A09481F45427700515337 /* KIFUITestActor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 976A09471F45427700515337 /* KIFUITestActor+Extension.m */; };
 		CB48587BD34615C444C6332E /* libPods-EAMovieAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */; };
 		ED98CFE7F2B400E2E70237D9 /* libPods-EAMovieAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D309C64818C06D4C3BAF9D5 /* libPods-EAMovieAppTests.a */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,8 @@
 		976A093A1F4454E100515337 /* SignUpViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewTests.m; sourceTree = "<group>"; };
 		976A093C1F45287500515337 /* Accessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accessibility.h; sourceTree = "<group>"; };
 		976A093D1F45287500515337 /* Accessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accessibility.m; sourceTree = "<group>"; };
+		976A09461F45427700515337 /* KIFUITestActor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFUITestActor+Extension.h"; sourceTree = "<group>"; };
+		976A09471F45427700515337 /* KIFUITestActor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFUITestActor+Extension.m"; sourceTree = "<group>"; };
 		BF212A87AECE5AA44C602B6B /* Pods-EAMovieAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF41C29BD1800F50125487DB /* libPods-EAMovieAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EAMovieAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD26A73D495843F45C1E5AB2 /* Pods-EAMovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAMovieAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-EAMovieAppTests/Pods-EAMovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 		976A091E1F440EFA00515337 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				976A09461F45427700515337 /* KIFUITestActor+Extension.h */,
+				976A09471F45427700515337 /* KIFUITestActor+Extension.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -724,6 +729,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976A09481F45427700515337 /* KIFUITestActor+Extension.m in Sources */,
 				976A09151F43E1FE00515337 /* AuthenticationRepositoryTests.m in Sources */,
 				97291F271F42E1BE00AD2351 /* Localizable.m in Sources */,
 				976A093F1F45287500515337 /* Accessibility.m in Sources */,

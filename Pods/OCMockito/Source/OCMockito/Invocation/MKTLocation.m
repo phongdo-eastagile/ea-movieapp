@@ -1,5 +1,5 @@
-//  OCMockito by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+//  OCMockito by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 Jonathan M. Reid. See LICENSE.txt
 
 #import "MKTLocation.h"
 
@@ -8,7 +8,7 @@
 
 
 @interface MKTLocation ()
-@property (nonatomic, copy, readonly) NSArray *callStack;
+@property (nonatomic, strong, readonly) NSArray<NSString *> *callStack; // strong not copy, for speed
 @end
 
 @implementation MKTLocation
@@ -19,17 +19,17 @@
     return self;
 }
 
-- (instancetype)initWithCallStack:(NSArray *)callStack
+- (instancetype)initWithCallStack:(NSArray<NSString *> *)callStack
 {
     self = [super init];
     if (self)
-        _callStack = [callStack copy];
+        _callStack = callStack;
     return self;
 }
 
 - (NSString *)description
 {
-    NSArray *stack = MKTFilterCallStack(MKTParseCallStack(self.callStack));
+    NSArray<MKTCallStackElement *> *stack = MKTFilterCallStack(MKTParseCallStack(self.callStack));
     return [stack componentsJoinedByString:@"\n"];
 }
 

@@ -39,12 +39,12 @@ describe(@"Authentication handlers", ^{
             }];
         });
         
-        it(@"tc1.should return user data when registered a new user", ^{
+        it(@"1.should return user data when registered a new user", ^{
             expect(authUser).willNot.beNil();
             expect(authError).will.beNil();
         });
         
-        it(@"tc2.should return an error when re-registered an exisiting user", ^{
+        it(@"2.should return an error when re-registered an exisiting user", ^{
             expect(authError).willNot.beNil();
             expect(authUser).will.beNil();
         });

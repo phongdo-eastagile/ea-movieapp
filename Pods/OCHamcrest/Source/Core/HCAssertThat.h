@@ -1,18 +1,20 @@
-//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2016 hamcrest.org. See LICENSE.txt
+//  OCHamcrest by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 hamcrest.org. See LICENSE.txt
 
 #import <Foundation/Foundation.h>
 
 @protocol HCMatcher;
 
+NS_ASSUME_NONNULL_BEGIN
+
 /*!
  * @header
  * Assertion macros for using matchers in testing frameworks.
- * Unmet assertions are reported to the @ref HCTestFailureReporterChain.
+ * Unmet assertions are reported to the HCTestFailureReporterChain.
  */
 
 
-FOUNDATION_EXPORT void HC_assertThatWithLocation(id testCase, id actual, id <HCMatcher> matcher,
+FOUNDATION_EXPORT void HC_assertThatWithLocation(id testCase, _Nullable id actual, id <HCMatcher> matcher,
                                                  const char *fileName, int lineNumber);
 
 #define HC_assertThat(actual, matcher)  \
@@ -25,7 +27,7 @@ FOUNDATION_EXPORT void HC_assertThatWithLocation(id testCase, id actual, id <HCM
  * @param actual The object to evaluate as the actual value.
  * @param matcher The matcher to satisfy as the expected condition.
  * @discussion assertThat passes the actual value to the matcher for evaluation. If the matcher is
- * not satisfied, it is reported to the @ref HCTestFailureReporterChain.
+ * not satisfied, it is reported to the HCTestFailureReporterChain.
  *
  * Use assertThat in test case methods. It's designed to integrate with XCTest and other testing
  * frameworks where individual tests are executed as methods.
@@ -38,7 +40,7 @@ FOUNDATION_EXPORT void HC_assertThatWithLocation(id testCase, id actual, id <HCM
 #endif
 
 
-typedef id (^HCFutureValue)();
+typedef _Nonnull id (^HCFutureValue)();
 
 FOUNDATION_EXPORT void HC_assertWithTimeoutAndLocation(id testCase, NSTimeInterval timeout,
         HCFutureValue actualBlock, id <HCMatcher> matcher,
@@ -59,9 +61,9 @@ FOUNDATION_EXPORT void HC_assertWithTimeoutAndLocation(id testCase, NSTimeInterv
  * @discussion <em>assertWithTimeout</em> polls a value provided by a block to asynchronously
  * satisfy the matcher. The block is evaluated repeatedly for an actual value, which is passed to
  * the matcher for evaluation. If the matcher is not satisfied within the timeout, it is reported to
- * the @ref HCTestFailureReporterChain.
+ * the HCTestFailureReporterChain.
  *
- * An easy way of providing the <em>actualBlock</em> is to use the macro @ref thatEventually</code>.
+ * An easy way of providing the <em>actualBlock</em> is to use the macro <code>thatEventually</code>.
  *
  * <b>Name Clash</b><br />
  * In the event of a name clash, <code>#define HC_DISABLE_SHORT_SYNTAX</code> and use the synonym
@@ -74,7 +76,9 @@ FOUNDATION_EXPORT void HC_assertWithTimeoutAndLocation(id testCase, NSTimeInterv
  * @abstract thatEventually(actual) -
  * Evaluates actual value at future time.
  * @param actual The object to evaluate as the actual value.
- * @discussion Wraps <em>actual</em> in a block so that it can be repeatedly evaluated by @ref assertWithTimeout.
+ * @discussion Wraps <em>actual</em> in a block so that it can be repeatedly evaluated by
+ * <code>assertWithTimeout</code>.
+ *
  * <b>Name Clash</b><br />
  * In the event of a name clash, <code>#define HC_DISABLE_SHORT_SYNTAX</code> and use the synonym
  * HC_thatEventually instead.
@@ -88,3 +92,5 @@ FOUNDATION_EXPORT void HC_assertWithTimeoutAndLocation(id testCase, NSTimeInterv
  * @discussion Helper function to let you describe mismatches the way <tt>assertThat</tt> does.
  */
 FOUNDATION_EXPORT NSString *HCDescribeMismatch(id <HCMatcher> matcher, id actual);
+
+NS_ASSUME_NONNULL_END

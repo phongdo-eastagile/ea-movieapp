@@ -1,5 +1,5 @@
 PODS:
-  - Expecta (1.0.5)
+  - Expecta (1.0.6)
   - Firebase/Auth (4.1.0):
     - Firebase/Core
     - FirebaseAuth (= 4.1.0)
@@ -20,8 +20,8 @@ PODS:
     - nanopb (~> 0.3)
   - FirebaseInstanceID (2.0.1):
     - FirebaseCore (~> 4.0)
-  - FontAwesomeKit/Core (2.2.0)
-  - FontAwesomeKit/FontAwesome (2.2.0):
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
     - FontAwesomeKit/Core
   - GoogleToolboxForMac/DebugUtils (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
@@ -35,32 +35,32 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.11)
   - IQKeyboardManager (4.0.11)
-  - KIF (3.4.2):
-    - KIF/Core (= 3.4.2)
-  - KIF/Core (3.4.2)
+  - KIF (3.6.0):
+    - KIF/Core (= 3.6.0)
+  - KIF/Core (3.6.0)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - OCHamcrest (5.2.0)
-  - OCMock (3.3)
-  - OCMockito (3.0.1):
-    - OCHamcrest (~> 5.1)
-  - OHHTTPStubs (5.0.0):
-    - OHHTTPStubs/Default (= 5.0.0)
-  - OHHTTPStubs/Core (5.0.0)
-  - OHHTTPStubs/Default (5.0.0):
+  - OCHamcrest (7.0.1)
+  - OCMock (3.4)
+  - OCMockito (5.0.0):
+    - OCHamcrest (~> 7.0)
+  - OHHTTPStubs (6.0.0):
+    - OHHTTPStubs/Default (= 6.0.0)
+  - OHHTTPStubs/Core (6.0.0)
+  - OHHTTPStubs/Default (6.0.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (5.0.0):
+  - OHHTTPStubs/JSON (6.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (5.0.0):
+  - OHHTTPStubs/NSURLSession (6.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (5.0.0)
-  - Specta (1.0.5)
+  - OHHTTPStubs/OHPathHelpers (6.0.0)
+  - Specta (1.0.6)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
@@ -77,23 +77,23 @@ DEPENDENCIES:
   - SVProgressHUD
 
 SPEC CHECKSUMS:
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Firebase: ebebf41db7f10e0c7668b6eaaa857fbe599aa478
   FirebaseAnalytics: 76f754d37ca5b04f36856729b6af3ca0152d1069
   FirebaseAuth: 8d1d2389cf82f891048d6d50d27d044f55ae09a6
   FirebaseCore: 7d876ea97a830cbe62ba7fbbe7670c833a324ba0
   FirebaseInstanceID: 0500e3cb54a1a4e01a8cffcc09323b8bb8fc7e1e
-  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
-  KIF: b518c9831453abea5afdbbde3908ec47832d6d56
+  KIF: bd770edd8ce49bc7308501e4871e58a02d137be3
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  OCHamcrest: 218dc4022a5e928a275771da70c5dbea9f859287
-  OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
-  OCMockito: 9eee3c61e42f7cb8aa015d66f8cc16849701d973
-  OHHTTPStubs: a5d2e9eea07869d42ec03338325f398bc520e159
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  OCHamcrest: 7c2229e7ea96eecd6e43dbef7c68e1dfbd6928b8
+  OCMock: 35ae71d6a8fcc1b59434d561d1520b9dd4f15765
+  OCMockito: 2598f5d43f6e74964d3ec3b9dea8b4fde3ea2c43
+  OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
 PODFILE CHECKSUM: 3bc571cfe2e35e359ca988bb439d3a0627db820e

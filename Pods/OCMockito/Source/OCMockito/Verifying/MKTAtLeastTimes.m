@@ -1,5 +1,5 @@
-//  OCMockito by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+//  OCMockito by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 Jonathan M. Reid. See LICENSE.txt
 //  Contribution by Markus Gasser
 
 #import "MKTAtLeastTimes.h"
@@ -23,7 +23,7 @@
 }
 
 
-#pragma mark MKTVerificationMode
+#pragma mark - MKTVerificationMode
 
 - (void)verifyData:(MKTVerificationData *)data testLocation:(MKTTestLocation)testLocation
 {

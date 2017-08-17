@@ -1,5 +1,5 @@
-//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2016 hamcrest.org. See LICENSE.txt
+//  OCHamcrest by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 hamcrest.org. See LICENSE.txt
 
 #import "HCIsDictionaryContainingEntries.h"
 
@@ -8,14 +8,13 @@
 
 @interface HCIsDictionaryContainingEntries ()
 @property (nonatomic, copy, readonly) NSArray *keys;
-@property (nonatomic, copy, readonly) NSArray *valueMatchers;
+@property (nonatomic, copy, readonly) NSArray<id <HCMatcher>> *valueMatchers;
 @end
-
 
 @implementation HCIsDictionaryContainingEntries
 
 - (instancetype)initWithKeys:(NSArray *)keys
-               valueMatchers:(NSArray *)valueMatchers
+               valueMatchers:(NSArray<id <HCMatcher>> *)valueMatchers
 {
     self = [super init];
     if (self)
@@ -99,7 +98,7 @@ static void requirePairedObject(id obj)
 id HC_hasEntriesIn(NSDictionary *valueMatchersForKeys)
 {
     NSArray *keys = valueMatchersForKeys.allKeys;
-    NSMutableArray *valueMatchers = [[NSMutableArray alloc] init];
+    NSMutableArray<id <HCMatcher>> *valueMatchers = [[NSMutableArray alloc] init];
     for (id key in keys)
         [valueMatchers addObject:HCWrapInMatcher(valueMatchersForKeys[key])];
 
@@ -116,7 +115,7 @@ id HC_hasEntries(id keysAndValueMatchers, ...)
     id valueMatcher = va_arg(args, id);
     requirePairedObject(valueMatcher);
     NSMutableArray *keys = [NSMutableArray arrayWithObject:key];
-    NSMutableArray *valueMatchers = [NSMutableArray arrayWithObject:HCWrapInMatcher(valueMatcher)];
+    NSMutableArray<id <HCMatcher>> *valueMatchers = [NSMutableArray arrayWithObject:HCWrapInMatcher(valueMatcher)];
 
     key = va_arg(args, id);
     while (key != nil)

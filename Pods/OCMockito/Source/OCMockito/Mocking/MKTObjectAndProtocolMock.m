@@ -1,5 +1,5 @@
-//  OCMockito by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+//  OCMockito by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 Jonathan M. Reid. See LICENSE.txt
 //  Contribution by Kevin Lundberg
 
 #import "MKTObjectAndProtocolMock.h"
@@ -44,7 +44,12 @@
 }
 
 
-#pragma mark NSObject protocol
+#pragma mark - NSObject protocol
+
+- (BOOL)isKindOfClass:(Class)aClass
+{
+    return [self.mockedClass isSubclassOfClass:aClass];
+}
 
 - (BOOL)respondsToSelector:(SEL)aSelector
 {

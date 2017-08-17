@@ -1,5 +1,5 @@
-//  OCMockito by Jon Reid, http://qualitycoding.org/about/
-//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+//  OCMockito by Jon Reid, https://qualitycoding.org/
+//  Copyright 2017 Jonathan M. Reid. See LICENSE.txt
 
 #import "MKTVerificationData.h"
 
@@ -16,7 +16,7 @@
 @dynamic invocations;
 
 - (instancetype)initWithInvocationContainer:(MKTInvocationContainer *)invocationContainer
-                          invocationMatcher:(MKTInvocationMatcher *)wanted;
+                          invocationMatcher:(MKTInvocationMatcher *)wanted
 {
     self = [super init];
     if (self)
@@ -27,7 +27,7 @@
     return self;
 }
 
-- (NSArray *)invocations
+- (NSArray<MKTInvocation *> *)invocations
 {
     return self.invocationContainer.registeredInvocations;
 }

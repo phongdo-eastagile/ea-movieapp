@@ -18,6 +18,7 @@
 #import <KIF/KIF.h>
 #import "Localizable.h"
 #import "Accessibility.h"
+#import "KIFUITestActor+Extension.h"
 
 #define localized(string) NSLocalizedString(string, nil)
 
