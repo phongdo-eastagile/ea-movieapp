@@ -6,6 +6,9 @@
 //  Copyright © 2017 East Agile. All rights reserved.
 //
 
+#import "AppTestHelper.h"
+
+
 SpecBegin(SignUpViewTests)
 
 __block NSString* userEmail;
@@ -65,14 +68,23 @@ describe(@"signup view", ^{
             [tester tapViewWithAccessibilityLabel:SIGNUP_BUTTON];
         });
         
-        it(@"should show the success alert", ^{
+        it(@"1.should show the success alert", ^{
             [tester waitForViewWithAccessibilityLabel:LOADING_INDICATOR];
             [tester waitForAbsenceOfViewWithAccessibilityLabel:LOADING_INDICATOR];
             [tester waitForViewWithAccessibilityLabel:localized(SIGNUP_SUCCEED_ALERT_TITLE)];
         });
         
+        it(@"2.should show the error alert", ^{
+            [tester waitForViewWithAccessibilityLabel:LOADING_INDICATOR];
+            [tester waitForAbsenceOfViewWithAccessibilityLabel:LOADING_INDICATOR];
+        });
+        
     });
     
+});
+
+afterAll(^{
+    [AppTestHelper deleteCurrentTestAccount];
 });
 
 SpecEnd

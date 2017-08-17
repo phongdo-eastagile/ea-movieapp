@@ -7,6 +7,7 @@
 //
 
 #import "AuthenticationRepository.h"
+#import "AppTestHelper.h"
 #import "UserEntity.h"
 
 
@@ -54,7 +55,7 @@ describe(@"Authentication handlers", ^{
 });
 
 afterAll(^{
-    [AuthenticationRepository deleteCurrentUserAccountWithCompletionHandler:^(BOOL isSuccess) { }];
+    [AppTestHelper deleteCurrentTestAccount];
 });
 
 SpecEnd
